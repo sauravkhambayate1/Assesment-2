@@ -1,0 +1,94 @@
+.middle-element{
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-weight: 100;
+    margin-top: 270px;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius:  300px ;
+    background-image: repeating-conic-gradient(green 10%, yellow 20%);
+    animation: animation1 8s  infinite;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@keyframes animation1 {
+    0%{
+         top: 0px;
+         left: 0px;
+         /* transform: rotate(180deg); */
+    }
+    25%{
+        top: 0px;
+         left: 1200px;
+          transform: rotate(180deg); 
+    }
+    50%{
+        top: 450px;
+         left: 1200px;
+         transform: rotate(180deg);
+    }
+    75%{
+        top: 450px;
+         left: 0px;
+         /* transform: rotate(180deg);  */
+    }
+    100%{
+        top: 0px;
+         left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .middle-element{
+        font-size: 50px;
+        text-align: center;
+        margin: auto;
+        margin-top: 200px;
+        /* padding: auto; */
+
+    }
+    .circle{
+        width: 30px;
+        height: 30px; */
+        border-radius: 30px;
+        animation-duration: 6s;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+     }
+
+     
+@keyframes animation1 {
+    0%{
+         top: 0px;
+         left: 0px;
+         /* transform: rotate(180deg); */
+    }
+    25%{
+        top: 0px;
+         left: 380px;
+          transform: rotate(180deg); 
+    }
+    50%{
+        top: 400px;
+         left: 380px;
+         transform: rotate(180deg);
+    }
+    75%{
+        top: 400;
+         left: 0px;
+         /* transform: rotate(180deg);  */
+    }
+    100%{
+        top: 0px;
+         left: 0px;
+    }
+}
+}
